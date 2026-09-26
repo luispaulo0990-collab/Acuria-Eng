@@ -62,19 +62,29 @@
 /* --------------------------------------------------------------------------
    2. Hero Section Components
    -------------------------------------------------------------------------- */
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: clamp(40px, 6vw, 80px);
+.hero-section-wrapper {
+  position: relative;
+  overflow: hidden;
+  min-height: 85vh;
+  display: flex;
   align-items: center;
-  padding-top: clamp(48px, 6vw, 96px);
-  padding-bottom: clamp(48px, 6vw, 96px);
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  padding-top: clamp(60px, 8vw, 110px);
+  padding-bottom: clamp(60px, 8vw, 110px);
+  width: 100%;
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   gap: 28px;
+  max-width: 800px;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-badge-container {
@@ -84,11 +94,12 @@
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  font-size: clamp(2.5rem, 5.2vw, 4.4rem);
   font-weight: 300;
-  line-height: 1.1;
-  letter-spacing: -0.01em;
+  line-height: 1.08;
+  letter-spacing: -0.015em;
   text-wrap: balance;
+  text-shadow: 0 4px 24px rgba(10, 17, 30, 0.8);
 }
 
 .hero-title .highlight-text {
@@ -96,13 +107,15 @@
   font-weight: 400;
   position: relative;
   display: inline-block;
+  text-shadow: 0 0 30px rgba(45, 212, 191, 0.35);
 }
 
 .hero-description {
   font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
   color: var(--color-text-muted);
-  line-height: 1.65;
-  max-width: 54ch;
+  line-height: 1.68;
+  max-width: 58ch;
+  text-shadow: 0 2px 12px rgba(10, 17, 30, 0.9);
 }
 
 .hero-cta-group {
@@ -115,10 +128,11 @@
 .hero-metrics-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding-top: 24px;
+  gap: 24px;
+  padding-top: 28px;
   border-top: 1px solid var(--color-slate-border);
   margin-top: 12px;
+  max-width: 680px;
 }
 
 .metric-item {
@@ -143,76 +157,53 @@
   color: var(--color-text-dim);
 }
 
-/* Painel Visual Geométrico do Hero */
-.hero-visual-card {
-  background: var(--color-bg-surface);
-  border: 1px solid var(--color-slate-border);
-  padding: 32px;
-  position: relative;
+/* Background com Efeito de Profundidade para o Logo ACURIA */
+.hero-depth-backdrop {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
   overflow: hidden;
-  box-shadow: var(--shadow-md);
 }
 
-.hero-visual-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 24px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid var(--color-slate-border);
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.12em;
-  color: var(--color-text-muted);
+.hero-depth-glow {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(450px, 50vw, 750px);
+  height: clamp(450px, 50vw, 750px);
+  background: radial-gradient(
+    circle,
+    rgba(13, 148, 136, 0.22) 0%,
+    rgba(13, 148, 136, 0.08) 45%,
+    transparent 70%
+  );
+  filter: blur(50px);
+  opacity: 0.9;
+  border-radius: 50%;
 }
 
-.blueprint-stage {
-  position: relative;
-  min-height: 320px;
+.hero-depth-symbol-wrap {
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: perspective(1000px) rotateY(-10deg) rotateX(4deg) translateY(-50%);
+  width: clamp(380px, 45vw, 680px);
+  height: clamp(380px, 45vw, 680px);
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.22;
+  filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.9));
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.8s ease;
 }
 
-.blueprint-grid-overlay {
-  position: absolute;
-  inset: 0;
-  background-image: 
-    linear-gradient(rgba(13, 148, 136, 0.15) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(13, 148, 136, 0.15) 1px, transparent 1px);
-  background-size: 28px 28px;
-  pointer-events: none;
+.hero-depth-symbol {
+  width: 100%;
+  height: 100%;
+  transform: scale(1.05);
 }
-
-.blueprint-center-symbol {
-  width: 140px;
-  height: 140px;
-  position: relative;
-  z-index: 2;
-  filter: drop-shadow(0 0 20px rgba(13, 148, 136, 0.3));
-}
-
-.blueprint-nodes {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-}
-
-.node-tag {
-  position: absolute;
-  background: rgba(10, 17, 30, 0.9);
-  border: 1px solid var(--color-accent);
-  padding: 6px 12px;
-  font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  color: var(--color-accent-light);
-  letter-spacing: 0.1em;
-  white-space: nowrap;
-}
-
-.node-tag-1 { top: 15%; left: 8%; }
-.node-tag-2 { bottom: 18%; right: 8%; }
-.node-tag-3 { bottom: 12%; left: 12%; }
 
 /* --------------------------------------------------------------------------
    3. Seção Sobre Nós: Origem e o Conceito de Acurácia

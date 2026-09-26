@@ -37,14 +37,22 @@
     gap: 36px;
   }
 
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 48px;
-    padding-top: 40px;
-  }
-
   .hero-content {
     max-width: 100%;
+  }
+
+  .hero-depth-symbol-wrap {
+    right: 2%;
+    opacity: 0.16;
+    transform: perspective(1000px) rotateY(-8deg) rotateX(2deg) translateY(-45%);
+    width: clamp(300px, 60vw, 500px);
+    height: clamp(300px, 60vw, 500px);
+  }
+
+  .hero-depth-glow {
+    right: 0%;
+    width: 85vw;
+    height: 85vw;
   }
 
   .simulator-wrapper {
@@ -140,14 +148,6 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .blueprint-stage {
-    min-height: 240px;
-  }
-
-  .node-tag-1 { top: 8%; left: 4%; }
-  .node-tag-2 { bottom: 8%; right: 4%; }
-  .node-tag-3 { display: none; }
 }
 
 /* Smartphones Pequenos (até 480px) */
