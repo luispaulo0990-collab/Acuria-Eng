@@ -68,9 +68,6 @@
             <a href="#produtos" class="nav-link">Soluções</a>
           </li>
           <li class="nav-item">
-            <a href="#engenharia-valor" class="nav-link">Engenharia de Valor</a>
-          </li>
-          <li class="nav-item">
             <a href="#linhas" class="nav-link">Linhas</a>
           </li>
           <li class="nav-item">
@@ -128,11 +125,6 @@
       <li>
         <a href="#produtos" class="mobile-nav-link">
           <span>Soluções & Produtos</span>
-        </a>
-      </li>
-      <li>
-        <a href="#engenharia-valor" class="mobile-nav-link">
-          <span>Engenharia de Valor & Cenários</span>
         </a>
       </li>
       <li>
@@ -627,163 +619,14 @@
     </section>
 
     <!-- ========================================================================
-         SEÇÃO 05: ENGENHARIA DE VALOR & SIMULADOR INTERATIVO
-         ======================================================================== -->
-    <section class="section-wrapper section-padding section-alt" id="engenharia-valor">
-      <div class="container">
-        
-        <div class="section-header">
-          <div class="section-header-top">
-            <span class="mono-label">05. Simulação de Trade-Offs</span>
-          </div>
-          <h2 class="section-title">Engenharia de Valor na Prática</h2>
-          <p class="section-subtitle">
-            Veja como a simulação de sistemas construtivos protege a margem da SPE sem perda de percepção de produto pelo comprador final.
-          </p>
-        </div>
-
-        <!-- Simulador Interativo de Cenários -->
-        <div class="simulator-wrapper">
-          
-          <div class="simulator-info">
-            <div style="display: flex; align-items: center; justify-content: space-between;">
-              <span class="mono-label">Módulo ACURIA | DECIDE</span>
-              <span id="scenario-risk-badge" class="mono-tag active">Risco: BAIXO</span>
-            </div>
-
-            <h3 id="scenario-result-title" style="font-size: 1.625rem; font-weight: 500;">Cenário 02 (Recomendado ACURIA)</h3>
-            
-            <p id="scenario-desc-text" style="font-size: 0.9375rem; min-height: 56px; color: var(--color-text-muted);">
-              Estacas espaçadas com concreto projetado + Painéis pré-moldados leves integrados com acabamento texturizado.
-            </p>
-
-            <div>
-              <span class="mono-label" style="font-size: 0.6875rem;">Clique para alternar o cenário:</span>
-              <div class="scenario-buttons-group">
-                <button type="button" class="scenario-btn" data-scenario="base">
-                  <span class="sc-label">Cenário Base</span>
-                  <span class="sc-name">Padrão Mercado</span>
-                </button>
-                <button type="button" class="scenario-btn" data-scenario="c01">
-                  <span class="sc-label">Cenário 01</span>
-                  <span class="sc-name">Alvenaria Racional</span>
-                </button>
-                <button type="button" class="scenario-btn active" data-scenario="c02">
-                  <span class="sc-label">Cenário 02</span>
-                  <span class="sc-name">Otimizado ACURIA</span>
-                </button>
-                <button type="button" class="scenario-btn" data-scenario="c03">
-                  <span class="sc-label">Cenário 03</span>
-                  <span class="sc-name">Misto Acelerado</span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Gráfico Interativo de Barras -->
-          <div class="chart-container">
-            <div class="chart-header">
-              <span>Custo por m² · Cenários de Estudo</span>
-              <span>São Paulo · SP</span>
-            </div>
-
-            <div class="chart-bars-stage">
-              
-              <!-- Barra BASE -->
-              <div class="bar-col" data-scenario="base">
-                <span class="bar-val">R$ 4.187</span>
-                <div class="bar-fill" style="height: 82%;"></div>
-                <span class="bar-tag">BASE</span>
-              </div>
-
-              <!-- Barra C-01 -->
-              <div class="bar-col" data-scenario="c01">
-                <span class="bar-val">R$ 4.052</span>
-                <div class="bar-fill" style="height: 74%;"></div>
-                <span class="bar-tag">C-01</span>
-              </div>
-
-              <!-- Barra C-02 (Recomendada) -->
-              <div class="bar-col active" data-scenario="c02">
-                <span class="bar-val">R$ 3.877</span>
-                <div class="bar-fill" style="height: 62%;"></div>
-                <span class="bar-tag">C-02</span>
-              </div>
-
-              <!-- Barra C-03 -->
-              <div class="bar-col" data-scenario="c03">
-                <span class="bar-val">R$ 4.240</span>
-                <div class="bar-fill" style="height: 90%;"></div>
-                <span class="bar-tag">C-03</span>
-              </div>
-
-            </div>
-
-            <!-- Faixa de Resultado -->
-            <div class="chart-result-badge">
-              <span class="chart-result-title">Impacto Direto na Margem da SPE:</span>
-              <span class="chart-result-metric" id="scenario-result-metric">-7,4% (Economia de R$ 2,4M)</span>
-            </div>
-          </div>
-
-        </div>
-
-        <!-- Estudo de Caso Real Detalhado -->
-        <div class="case-study-box">
-          <div class="case-study-header">
-            <div>
-              <span class="mono-label">Estudo de Caso Real · Edifício Residencial SP</span>
-              <h3 style="font-size: 1.25rem; font-weight: 500; margin-top: 4px;">Otimização Estrutural e de Envoltória</h3>
-            </div>
-            <span class="mono-tag active">Ganho de R$ 2,40M no Resultado Líquido</span>
-          </div>
-
-          <div class="table-responsive">
-            <table class="custom-table">
-              <thead>
-                <tr>
-                  <th>Frente Analisada</th>
-                  <th>Solução Convencional</th>
-                  <th>Alternativa Otimizada ACURIA</th>
-                  <th>Impacto Financeiro & Prazo</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><strong>Estrutura de Contenção</strong></td>
-                  <td>Paredes diafragma contínuas superdimensionadas</td>
-                  <td>Estacas espaçadas com concreto projetado e tirantes otimizados</td>
-                  <td class="cell-highlight">Economia direta de R$ 1,35M (-14% no subsistema)</td>
-                </tr>
-                <tr>
-                  <td><strong>Envoltória / Fachada</strong></td>
-                  <td>Alvenaria tradicional com argamassa armada pesada</td>
-                  <td>Painéis pré-moldados leves com acabamento texturizado</td>
-                  <td class="cell-highlight">Redução de R$ 1,05M e antecipação de 18 dias na vedação</td>
-                </tr>
-                <tr class="highlight-row">
-                  <td><strong>Resultado Consolidado</strong></td>
-                  <td>Custo inicial estimado: <strong>R$ 54,2M</strong></td>
-                  <td>Custo aprovado com otimizações: <strong>R$ 51,8M</strong></td>
-                  <td class="cell-highlight" style="font-size: 1rem;">Ganho direto de R$ 2,40M na margem líquida</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ========================================================================
-         SEÇÃO 06: LINHAS ATENDIDAS & MODELOS COMERCIAIS
+         SEÇÃO 05: LINHAS ATENDIDAS & MODELOS COMERCIAIS
          ======================================================================== -->
     <section class="section-wrapper section-padding" id="linhas">
       <div class="container">
         
         <div class="section-header">
           <div class="section-header-top">
-            <span class="mono-label">06. Segmentos & Formatos</span>
+            <span class="mono-label">05. Segmentos & Formatos</span>
           </div>
           <h2 class="section-title">Linhas Atendidas & Engajamento</h2>
           <p class="section-subtitle">
@@ -869,14 +712,14 @@
     </section>
 
     <!-- ========================================================================
-         SEÇÃO 07: COMO TRABALHAMOS (LINHA DO TEMPO DE 5 SEMANAS)
+         SEÇÃO 06: COMO TRABALHAMOS (LINHA DO TEMPO DE 5 SEMANAS)
          ======================================================================== -->
     <section class="section-wrapper section-padding section-alt" id="processo">
       <div class="container">
         
         <div class="section-header">
           <div class="section-header-top">
-            <span class="mono-label">07. Ciclo de Execução</span>
+            <span class="mono-label">06. Ciclo de Execução</span>
           </div>
           <h2 class="section-title">Como Trabalhamos</h2>
           <p class="section-subtitle">
@@ -925,14 +768,14 @@
     </section>
 
     <!-- ========================================================================
-         SEÇÃO 08: FORMULÁRIO DE CONTATO & DIAGNÓSTICO PILOTO (SECURITY-FIRST)
+         SEÇÃO 07: FORMULÁRIO DE CONTATO & DIAGNÓSTICO PILOTO (SECURITY-FIRST)
          ======================================================================== -->
     <section class="section-wrapper section-padding" id="contato">
       <div class="container contact-container-grid">
         
         <div class="contact-info-col">
           <div class="section-header-top">
-            <span class="mono-label">08. Próximos Passos</span>
+            <span class="mono-label">07. Próximos Passos</span>
           </div>
           
           <h2 style="font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 400; line-height: 1.15;">
@@ -1054,7 +897,8 @@
             <li><a href="#posicionamento" class="footer-nav-link">Posicionamento</a></li>
             <li><a href="#metodo" class="footer-nav-link">Método 360°</a></li>
             <li><a href="#produtos" class="footer-nav-link">Soluções</a></li>
-            <li><a href="#engenharia-valor" class="footer-nav-link">Engenharia de Valor</a></li>
+            <li><a href="#linhas" class="footer-nav-link">Linhas Atendidas</a></li>
+            <li><a href="#processo" class="footer-nav-link">Como Trabalhamos</a></li>
           </ul>
         </div>
 

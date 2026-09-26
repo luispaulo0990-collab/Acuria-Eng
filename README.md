@@ -32,10 +32,9 @@ O projeto conta com duas direções visuais completas, independentes e comparáv
 2. **Posicionamento** — A pergunta do incorporador (*"Esse empreendimento fecha e onde está o risco?"*) e comparativo espelhado com o mercado convencional.
 3. **Método Proprietário CUSTO 360°** — 7 etapas sequenciais (Projeto, Quantitativo, Banco de Custos, Mercado, Benchmarking, Cenários, Decisão).
 4. **Portfólio de Soluções** — Grid balanceado 2 + 1 + 2 com destaque central para `ACURIA | DECIDE` (Carro-Chefe) e soluções de ciclo de vida (`ESTIMA`, `ORÇA`, `CONTROL`, `DATA`).
-5. **Engenharia de Valor & Simulador Interativo** — Calculadora dinâmica de cenários alternativos (Base, Alvenaria Racional, Otimizado ACURIA, Misto Acelerado) e estudo de caso consolidado.
-6. **Linhas Atendidas & Formatos Comerciais** — Residencial, HIS/HMP, Médio/Alto Padrão, Loteamentos e modelos *Spot*, *Pipeline Retainer* e *Success Fee*.
-7. **Como Trabalhamos** — Linha do tempo de engajamento em 5 semanas (Imersão, Quantificação, Cenários, Decisão) e entregáveis sob NDA.
-8. **Diagnóstico Piloto & Contato** — Formulário seguro com validação e retorno em até 5 dias úteis.
+5. **Linhas Atendidas & Formatos Comerciais** — Residencial, HIS/HMP, Médio/Alto Padrão, Loteamentos e modelos *Spot*, *Pipeline Retainer* e *Success Fee*.
+6. **Como Trabalhamos** — Linha do tempo de engajamento em 5 semanas (Imersão, Quantificação, Cenários, Decisão) e entregáveis sob NDA.
+7. **Diagnóstico Piloto & Contato** — Formulário seguro com validação e retorno em até 5 dias úteis.
 
 ---
 
