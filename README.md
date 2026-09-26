@@ -10,19 +10,12 @@ Plataforma institucional e boutique de inteligência de custos, engenharia de va
 
 ---
 
-## 🎨 Versões Disponíveis para Comparação
+## 🎨 Identidade Visual & Design System
 
-O projeto conta com duas direções visuais completas, independentes e comparáveis através de alternador rápido no cabeçalho:
-
-1. **Versão Dark / Blueprint Técnico (`index.html`)**:
-   - Estética inspirada em plantas técnicas, precisão cartesiana e grid estrutural escuro (`#0A111E`).
-   - Acentos em Verde Esmeralda Técnico (`#0D9488` / `#5EEAD4`) e tipografia de engenharia.
-   - Folhas de estilo: pasta `css/`.
-
-2. **Versão Light / Soft Modern & Editorial Luxury (`index-light.html`)**:
-   - Estética suave, moderna e arejada com fundo porcelana (`#F8FAFC`), superfícies brancas com sombras ambientes difusas e alta legibilidade.
-   - Cartões com arquitetura *double-bezel*, tipografia nobre e contraste com *Deep Slate Navy* (`#0F172A`).
-   - Folhas de estilo: pasta `css-light/`.
+A plataforma adota a identidade oficial da **ACURIA**:
+- **Paleta Base**: Fundo escuro cartesiano (`#0A111E`, `#070D18`) com grid técnico de precisão.
+- **Cor Institucional**: Verde Esmeralda Técnico (`#0D9488` / `#14B8A6` / `#5EEAD4`) e tons de ardósia estrutural (`#94A3B8`, `#475569`).
+- **Tipografia**: *Urbanist* (marca e títulos), *Inter* (corpo e leitura) e *Roboto Mono* (etiquetas e métricas).
 
 ---
 
@@ -44,12 +37,11 @@ O projeto conta com duas direções visuais completas, independentes e comparáv
 - **CSS3 Modular**:
   - `variables.css` — Tokens de cor, tipografia e espaçamentos.
   - `base.css` — Reset moderno e padrões de fundo.
-  - `layout.css` — Header flutuante, grid container e footer.
-  - `components.css` — Cards, simulador, tabelas e formulários.
+  - `layout.css` — Header com scrollspy, grid container e footer.
+  - `components.css` — Cards, comparativos, tabelas e formulários.
   - `responsive.css` — Breakpoints fluidos para mobile, tablet e desktop.
 - **JavaScript Vanilla ES6+**:
   - `navigation.js` — Scrollspy com indicador ativo e gaveta mobile.
-  - `simulator.js` — Motor de cálculo de cenários e atualização reativa do gráfico.
   - `form.js` — Validação e sanitização segura de entradas.
   - `animations.js` — Intersection Observer para revelação suave de elementos.
 
@@ -57,17 +49,13 @@ O projeto conta com duas direções visuais completas, independentes e comparáv
 
 ## 🚀 Como Executar Localmente
 
-Como o projeto é construído em padrões nativos (Vanilla HTML/CSS/JS), basta abrir qualquer um dos arquivos HTML diretamente no navegador:
+Como o projeto é construído em padrões nativos (Vanilla HTML/CSS/JS), basta abrir o arquivo `index.html` diretamente no navegador:
 
-- **Versão Dark**: Abra `index.html`
-- **Versão Light**: Abra `index-light.html`
-
-Ou utilize qualquer servidor local:
 ```bash
-# Com Python 3
+# Ou com Python 3
 python -m http.server 8000
 
-# Com Node / npx
+# Ou com Node
 npx serve .
 ```
 Acesse `http://localhost:8000` no seu navegador.
