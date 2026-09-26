@@ -1,0 +1,53 @@
+:root {
+  /* Cores Principais - Manual de Identidade ACURIA */
+  --color-bg-primary: #0A111E;        /* Azul Grafite Profundo */
+  --color-bg-surface: #0E1626;        /* Superfície de Cards */
+  --color-bg-surface-elevated: #141F33; /* Superfície Elevada / Hover */
+  --color-bg-alt: #070D18;            /* Fundo Alternativo Profundo */
+  --color-bg-glass: rgba(14, 22, 38, 0.75);
+  
+  /* Cores de Destaque e Acento */
+  --color-accent: #0D9488;            /* Verde Esmeralda Técnico */
+  --color-accent-hover: #14B8A6;      /* Esmeralda Vibrante Hover */
+  --color-accent-light: #5EEAD4;      /* Esmeralda Claro / Glow */
+  --color-accent-subtle: rgba(13, 148, 136, 0.12);
+  --color-accent-border: rgba(13, 148, 136, 0.4);
+
+  /* Cinzas Arquitetônicos e Estruturais */
+  --color-slate-dark: #1E293B;
+  --color-slate: #475569;             /* Cinza Arquitetônico */
+  --color-slate-light: #64748B;
+  --color-slate-border: rgba(71, 85, 105, 0.35);
+  --color-slate-border-light: rgba(148, 163, 184, 0.15);
+
+  /* Tipografia */
+  --color-text-primary: #FFFFFF;
+  --color-text-body: #E7ECF3;
+  --color-text-muted: #94A3B8;
+  --color-text-dim: #64748B;
+
+  /* Fontes */
+  --font-brand: 'Urbanist', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  /* Grid e Espaçamentos */
+  --grid-unit: 8px;
+  --container-max: 1400px;
+  --header-height: 80px;
+
+  /* Transições e Sombras */
+  --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow: 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px rgba(13, 148, 136, 0.2);
+
+  /* Borda e Raio */
+  --radius-none: 0px;   /* Fidelidade técnica aos cantos retos do manual */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+}

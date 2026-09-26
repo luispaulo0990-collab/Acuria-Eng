@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  html, body { margin: 0; background: #060A12; }
+  a { color: #0D9488; text-decoration: none; }
+  a:hover { color: #14B8A6; }
+</style>
+</helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+
+  <section data-label="Capa" data-screen-label="01" data-speaker-notes="Abertura. Apresentar a ACURIA como boutique de inteligência de custos, não como orçamentista." style="background-color: #0A111E; background-image: linear-gradient(rgba(71,85,105,0.14) 1px, transparent 1px), linear-gradient(90deg, rgba(71,85,105,0.14) 1px, transparent 1px); background-size: 80px 80px; color: #E7ECF3; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; justify-content: space-between; padding: 110px 120px;">
+    <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 30px;">
+      <svg viewBox="0 0 64 64" width="150" height="150">
+        <polygon points="31.6,6 37.7,16.7 16.6,58 4,58" fill="#FFFFFF" />
+        <polygon points="39.5,19.04 60,58 47.4,58 33.2,31.36" fill="#0D9488" />
+      </svg>
+      <div style="font-family: 'Urbanist', sans-serif; font-weight: 400; font-size: 118px; letter-spacing: 0.24em; line-height: 1;">ACURIA</div>
+      <div style="font-family: 'Urbanist', sans-serif; font-size: 30px; letter-spacing: 0.3em; text-transform: uppercase; color: #94A3B8;">Inteligência de custos</div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 60px; border-top: 1px solid rgba(71,85,105,0.5); padding-top: 34px;">
+      <div style="font-family: 'Urbanist', sans-serif; font-size: 44px; font-weight: 300; letter-spacing: 0.04em; color: #FFFFFF; max-width: 22ch;">Decisões imobiliárias começam pelo custo certo</div>
+      <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #94A3B8; text-align: right;">São Paulo · SP<br />2026</div>
+    </div>
+  </section>
+
+  <section data-label="A pergunta" data-screen-label="02" data-speaker-notes="Toda conversa com incorporador começa aqui. Nosso produto é a resposta a esta pergunta." style="background: #0A111E; color: #E7ECF3; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; justify-content: center; gap: 56px; padding: 110px 140px;">
+    <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.16em; text-transform: uppercase; color: #0D9488;">A pergunta do incorporador</div>
+    <div style="font-family: 'Urbanist', sans-serif; font-weight: 300; font-size: 104px; line-height: 1.12; letter-spacing: 0.01em; max-width: 30ch; text-wrap: pretty;">“Esse empreendimento fecha <span style="color: #0D9488;">e onde está o risco?”</span></div>
+    <div style="font-size: 30px; line-height: 1.55; color: #94A3B8; max-width: 60ch;">A ACURIA existe para responder isso com número, cenário e leitura de mercado — antes de o capital entrar na obra.</div>
+  </section>
+
+  <section data-label="Posicionamento" data-screen-label="03" data-speaker-notes="Delimitar o território: consultoria estratégica de custos, não construtora nem prestadora de orçamento avulso." style="background: #F4F6F8; color: #0A111E; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; justify-content: center; gap: 64px; padding: 110px 120px;">
+    <div style="display: flex; align-items: baseline; gap: 26px;">
+      <span style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">03</span>
+      <h2 style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 52px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0;">Posicionamento</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+      <div style="background: #FFFFFF; border: 1px solid rgba(71,85,105,0.3); border-top: 4px solid #0D9488; padding: 48px;">
+        <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #0D9488; margin-bottom: 28px;">O que somos</div>
+        <div style="font-family: 'Urbanist', sans-serif; font-size: 40px; font-weight: 400; line-height: 1.3; margin-bottom: 26px;">Boutique de inteligência de custos e planejamento para tomada de decisão.</div>
+        <div style="font-size: 26px; line-height: 1.6; color: #475569;">Atuamos ao lado do incorporador na concepção, na viabilidade e no controle do desenvolvimento.</div>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid rgba(71,85,105,0.3); border-top: 4px solid #475569; padding: 48px;">
+        <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.14em; text-transform: uppercase; color: #475569; margin-bottom: 28px;">O que não somos</div>
+        <div style="font-family: 'Urbanist', sans-serif; font-size: 40px; font-weight: 400; line-height: 1.3; margin-bottom: 26px;">Construtora, gerenciadora de obra ou fornecedor de orçamento avulso.</div>
+        <div style="font-size: 26px; line-height: 1.6; color: #475569;">Não competimos com quem executa. Entregamos a leitura de custo que embasa a decisão.</div>
+      </div>
+    </div>
+    <div style="display: flex; gap: 60px; flex-wrap: wrap; font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.1em; text-transform: uppercase; color: #475569; border-top: 1px solid rgba(71,85,105,0.3); padding-top: 32px;">
+      <span>Incorporadoras</span><span>Desenvolvedores</span><span>Investidores</span><span>Family offices</span>
+    </div>
+  </section>
+
+  <section data-label="Custo 360" data-screen-label="04" data-speaker-notes="Sete etapas, sempre na mesma ordem. Cada entrega da casa roda parte deste fluxo." style="background-color: #0A111E; background-image: linear-gradient(rgba(71,85,105,0.14) 1px, transparent 1px), linear-gradient(90deg, rgba(71,85,105,0.14) 1px, transparent 1px); background-size: 80px 80px; color: #E7ECF3; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; justify-content: center; gap: 56px; padding: 110px 120px;">
+    <div style="display: flex; align-items: baseline; gap: 26px;">
+      <span style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">04</span>
+      <h2 style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 52px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0;">Método ACURIA | Custo 360°</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 16px;">
+      <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(71,85,105,0.5); border-top: 4px solid #0D9488; padding: 34px 24px 40px 24px; display: flex; flex-direction: column; gap: 18px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">01</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.25; min-height: 108px;">Projeto</div>
+          <div style="font-size: 24px; line-height: 1.5; color: #94A3B8;">Leitura técnica do escopo e das premissas.</div>
+        </div>
+      
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(71,85,105,0.5); border-top: 4px solid #0D9488; padding: 34px 24px 40px 24px; display: flex; flex-direction: column; gap: 18px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">02</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.25; min-height: 108px;">Quantitativo</div>
+          <div style="font-size: 24px; line-height: 1.5; color: #94A3B8;">Quantidades por sistema e frente de serviço.</div>
+        </div>
+      
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(71,85,105,0.5); border-top: 4px solid #0D9488; padding: 34px 24px 40px 24px; display: flex; flex-direction: column; gap: 18px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">03</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.25; min-height: 108px;">Banco de custos</div>
+          <div style="font-size: 24px; line-height: 1.5; color: #94A3B8;">Composições próprias e índices de referência.</div>
+        </div>
+      
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(71,85,105,0.5); border-top: 4px solid #0D9488; padding: 34px 24px 40px 24px; display: flex; flex-direction: column; gap: 18px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">04</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.25; min-height: 108px;">Mercado</div>
+          <div style="font-size: 24px; line-height: 1.5; color: #94A3B8;">Cotações e preços praticados na praça.</div>
+        </div>
+      
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(71,85,105,0.5); border-top: 4px solid #0D9488; padding: 34px 24px 40px 24px; display: flex; flex-direction: column; gap: 18px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">05</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.25; min-height: 108px;">Benchmarking</div>
+          <div style="font-size: 24px; line-height: 1.5; color: #94A3B8;">Comparação com empreendimentos equivalentes.</div>
+        </div>
+      
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(71,85,105,0.5); border-top: 4px solid #0D9488; padding: 34px 24px 40px 24px; display: flex; flex-direction: column; gap: 18px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">06</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.25; min-height: 108px;">Cenários</div>
+          <div style="font-size: 24px; line-height: 1.5; color: #94A3B8;">Alternativas e impacto em custo e prazo.</div>
+        </div>
+      
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(71,85,105,0.5); border-top: 4px solid #0D9488; padding: 34px 24px 40px 24px; display: flex; flex-direction: column; gap: 18px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">07</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 28px; letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.25; min-height: 108px;">Decisão</div>
+          <div style="font-size: 24px; line-height: 1.5; color: #94A3B8;">Recomendação com risco mapeado.</div>
+        </div>
+    </div>
+    <div style="font-size: 28px; color: #94A3B8; max-width: 80ch;">O fluxo termina sempre em decisão: recomendação com risco mapeado e margem de segurança explicitada.</div>
+  </section>
+
+  <section data-label="Produtos" data-screen-label="05" data-speaker-notes="Cinco produtos. DECIDE é o carro-chefe; DATA é a visão de futuro." style="background: #F4F6F8; color: #0A111E; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; justify-content: center; gap: 48px; padding: 110px 120px;">
+    <div style="display: flex; align-items: baseline; gap: 26px;">
+      <span style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">05</span>
+      <h2 style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 52px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0;">Arquitetura de produtos</h2>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+      <div style="display: grid; grid-template-columns: 420px 1fr 260px; gap: 40px; align-items: center; padding: 34px 0; border-top: 1px solid rgba(71,85,105,0.3);">
+          <div style="display: flex; align-items: center; gap: 20px;">
+            <svg viewBox="0 0 64 64" width="44" height="44" style="flex: none;">
+              <polygon points="31.6,6 37.7,16.7 16.6,58 4,58" fill="#0A111E" />
+              <polygon points="39.5,19.04 60,58 47.4,58 33.2,31.36" fill="#0D9488" />
+            </svg>
+            <div style="display: flex; align-items: baseline; gap: 14px; font-family: 'Urbanist', sans-serif; font-weight: 400; font-size: 34px; letter-spacing: 0.16em; white-space: nowrap;">
+              <span style="color: #475569;">ACURIA</span>
+              <span style="color: #94A3B8;">|</span>
+              <span style="color: #0D9488;">ESTIMA</span>
+            </div>
+          </div>
+          <div style="font-size: 26px; line-height: 1.55; color: #475569; text-wrap: pretty;">Estimativas de custo, estudos paramétricos, análise de terrenos e viabilidade para concepção de novos negócios.</div>
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #0A111E; text-align: right;">Concepção</div>
+        </div>
+      
+        <div style="display: grid; grid-template-columns: 420px 1fr 260px; gap: 40px; align-items: center; padding: 34px 0; border-top: 1px solid rgba(71,85,105,0.3);">
+          <div style="display: flex; align-items: center; gap: 20px;">
+            <svg viewBox="0 0 64 64" width="44" height="44" style="flex: none;">
+              <polygon points="31.6,6 37.7,16.7 16.6,58 4,58" fill="#0A111E" />
+              <polygon points="39.5,19.04 60,58 47.4,58 33.2,31.36" fill="#0D9488" />
+            </svg>
+            <div style="display: flex; align-items: baseline; gap: 14px; font-family: 'Urbanist', sans-serif; font-weight: 400; font-size: 34px; letter-spacing: 0.16em; white-space: nowrap;">
+              <span style="color: #475569;">ACURIA</span>
+              <span style="color: #94A3B8;">|</span>
+              <span style="color: #0D9488;">ORÇA</span>
+            </div>
+          </div>
+          <div style="font-size: 26px; line-height: 1.55; color: #475569; text-wrap: pretty;">Orçamento analítico e executivo com diagnóstico técnico e levantamento quantitativo.</div>
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #0A111E; text-align: right;">Orçamentação</div>
+        </div>
+      
+        <div style="display: grid; grid-template-columns: 420px 1fr 260px; gap: 40px; align-items: center; padding: 34px 0; border-top: 1px solid rgba(71,85,105,0.3);">
+          <div style="display: flex; align-items: center; gap: 20px;">
+            <svg viewBox="0 0 64 64" width="44" height="44" style="flex: none;">
+              <polygon points="31.6,6 37.7,16.7 16.6,58 4,58" fill="#0A111E" />
+              <polygon points="39.5,19.04 60,58 47.4,58 33.2,31.36" fill="#0D9488" />
+            </svg>
+            <div style="display: flex; align-items: baseline; gap: 14px; font-family: 'Urbanist', sans-serif; font-weight: 400; font-size: 34px; letter-spacing: 0.16em; white-space: nowrap;">
+              <span style="color: #475569;">ACURIA</span>
+              <span style="color: #94A3B8;">|</span>
+              <span style="color: #0D9488;">DECIDE</span>
+            </div>
+          </div>
+          <div style="font-size: 26px; line-height: 1.55; color: #475569; text-wrap: pretty;">Engenharia de valor, benchmarking, cenários de custo e análise comparativa de sistemas construtivos.</div>
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #0A111E; text-align: right;">Carro-chefe</div>
+        </div>
+      
+        <div style="display: grid; grid-template-columns: 420px 1fr 260px; gap: 40px; align-items: center; padding: 34px 0; border-top: 1px solid rgba(71,85,105,0.3);">
+          <div style="display: flex; align-items: center; gap: 20px;">
+            <svg viewBox="0 0 64 64" width="44" height="44" style="flex: none;">
+              <polygon points="31.6,6 37.7,16.7 16.6,58 4,58" fill="#0A111E" />
+              <polygon points="39.5,19.04 60,58 47.4,58 33.2,31.36" fill="#0D9488" />
+            </svg>
+            <div style="display: flex; align-items: baseline; gap: 14px; font-family: 'Urbanist', sans-serif; font-weight: 400; font-size: 34px; letter-spacing: 0.16em; white-space: nowrap;">
+              <span style="color: #475569;">ACURIA</span>
+              <span style="color: #94A3B8;">|</span>
+              <span style="color: #0D9488;">CONTROL</span>
+            </div>
+          </div>
+          <div style="font-size: 26px; line-height: 1.55; color: #475569; text-wrap: pretty;">Gestão de variações de custo, forecast e controle durante o desenvolvimento.</div>
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #0A111E; text-align: right;">Execução</div>
+        </div>
+      
+        <div style="display: grid; grid-template-columns: 420px 1fr 260px; gap: 40px; align-items: center; padding: 34px 0; border-top: 1px solid rgba(71,85,105,0.3);">
+          <div style="display: flex; align-items: center; gap: 20px;">
+            <svg viewBox="0 0 64 64" width="44" height="44" style="flex: none;">
+              <polygon points="31.6,6 37.7,16.7 16.6,58 4,58" fill="#0A111E" />
+              <polygon points="39.5,19.04 60,58 47.4,58 33.2,31.36" fill="#0D9488" />
+            </svg>
+            <div style="display: flex; align-items: baseline; gap: 14px; font-family: 'Urbanist', sans-serif; font-weight: 400; font-size: 34px; letter-spacing: 0.16em; white-space: nowrap;">
+              <span style="color: #475569;">ACURIA</span>
+              <span style="color: #94A3B8;">|</span>
+              <span style="color: #0D9488;">DATA</span>
+            </div>
+          </div>
+          <div style="font-size: 26px; line-height: 1.55; color: #475569; text-wrap: pretty;">Inteligência de dados e benchmarking histórico de indicadores.</div>
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #0A111E; text-align: right;">Visão de futuro</div>
+        </div>
+      <div style="border-top: 1px solid rgba(71,85,105,0.3);"></div>
+    </div>
+  </section>
+
+  <section data-label="Decide" data-screen-label="06" data-speaker-notes="Carro-chefe. Explicar engenharia de valor e comparação de sistemas construtivos. Valores do gráfico são ilustrativos." style="background: #0A111E; color: #E7ECF3; font-family: 'Inter', sans-serif; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; padding: 110px 120px;">
+    <div style="display: flex; flex-direction: column; gap: 36px;">
+      <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">06</div>
+      <div style="display: flex; align-items: baseline; gap: 16px; font-family: 'Urbanist', sans-serif; font-weight: 400; font-size: 46px; letter-spacing: 0.16em;">
+        <span style="color: #94A3B8;">ACURIA</span><span style="color: #475569;">|</span><span style="color: #0D9488;">DECIDE</span>
+      </div>
+      <div style="font-family: 'Urbanist', sans-serif; font-weight: 300; font-size: 62px; line-height: 1.18; max-width: 26ch;">Engenharia de valor e cenários de custo comparáveis</div>
+      <div style="font-size: 28px; line-height: 1.6; color: #94A3B8; max-width: 44ch;">Comparação de sistemas construtivos, benchmarking e impacto em custo, prazo e risco. Cada cenário chega ao comitê com a recomendação técnica já isolada.</div>
+      <div style="display: flex; gap: 16px; flex-wrap: wrap; font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.1em; text-transform: uppercase;">
+        <span style="border: 1px solid #475569; padding: 12px 18px; color: #CBD5E1;">Benchmarking</span>
+        <span style="border: 1px solid #475569; padding: 12px 18px; color: #CBD5E1;">Sistemas construtivos</span>
+        <span style="border: 1px solid #0D9488; padding: 12px 18px; color: #5EEAD4;">Cenário recomendado</span>
+      </div>
+    </div>
+    <div style="border: 1px solid rgba(71,85,105,0.5); padding: 48px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 40px;">
+        <span style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #94A3B8;">Custo por m² · cenários</span>
+        <span style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #94A3B8;">ilustrativo</span>
+      </div>
+      <div style="display: flex; align-items: flex-end; gap: 22px; height: 340px;">
+        <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 16px; height: 100%;">
+            <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #E7ECF3; text-align: center;">R$ 4.187</div>
+            <div style="height: 82%; background: #475569;"></div>
+            <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.1em; color: #94A3B8; text-align: center;">BASE</div>
+          </div>
+        
+          <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 16px; height: 100%;">
+            <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #E7ECF3; text-align: center;">R$ 4.052</div>
+            <div style="height: 74%; background: #475569;"></div>
+            <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.1em; color: #94A3B8; text-align: center;">C-01</div>
+          </div>
+        
+          <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 16px; height: 100%;">
+            <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #E7ECF3; text-align: center;">R$ 3.877</div>
+            <div style="height: 62%; background: #0D9488;"></div>
+            <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.1em; color: #94A3B8; text-align: center;">C-02</div>
+          </div>
+        
+          <div style="flex: 1; display: flex; flex-direction: column; justify-content: flex-end; gap: 16px; height: 100%;">
+            <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #E7ECF3; text-align: center;">R$ 4.240</div>
+            <div style="height: 90%; background: #475569;"></div>
+            <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.1em; color: #94A3B8; text-align: center;">C-03</div>
+          </div>
+      </div>
+      <div style="margin-top: 36px; background: #0D9488; color: #FFFFFF; padding: 20px 24px; display: flex; justify-content: space-between; align-items: baseline; gap: 24px;">
+        <span style="font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600;">Economia no cenário C-02</span>
+        <span style="font-family: 'Roboto Mono', monospace; font-size: 28px;">-7,4%</span>
+      </div>
+    </div>
+  </section>
+
+  <section data-label="Linhas" data-screen-label="07" data-speaker-notes="Linhas atendidas e o que muda de tratamento em cada uma." style="background: #F4F6F8; color: #0A111E; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; justify-content: center; gap: 56px; padding: 110px 120px;">
+    <div style="display: flex; align-items: baseline; gap: 26px;">
+      <span style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">07</span>
+      <h2 style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 52px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0;">Linhas atendidas</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px;">
+      <div style="background: #FFFFFF; border: 1px solid rgba(71,85,105,0.3); padding: 44px 36px; display: flex; flex-direction: column; gap: 22px; min-height: 340px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">01</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 36px; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.2;">Residencial</div>
+          <div style="font-size: 24px; line-height: 1.55; color: #475569;">Viabilidade e custo-alvo por tipologia e padrão de acabamento.</div>
+        </div>
+      
+        <div style="background: #FFFFFF; border: 1px solid rgba(71,85,105,0.3); padding: 44px 36px; display: flex; flex-direction: column; gap: 22px; min-height: 340px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">02</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 36px; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.2;">HIS / HMP</div>
+          <div style="font-size: 24px; line-height: 1.55; color: #475569;">Custo compatível com o enquadramento e a margem do programa.</div>
+        </div>
+      
+        <div style="background: #FFFFFF; border: 1px solid rgba(71,85,105,0.3); padding: 44px 36px; display: flex; flex-direction: column; gap: 22px; min-height: 340px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">03</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 36px; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.2;">Médio e alto padrão</div>
+          <div style="font-size: 24px; line-height: 1.55; color: #475569;">Engenharia de valor sem perda de percepção de produto.</div>
+        </div>
+      
+        <div style="background: #FFFFFF; border: 1px solid rgba(71,85,105,0.3); padding: 44px 36px; display: flex; flex-direction: column; gap: 22px; min-height: 340px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">04</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 36px; letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.2;">Loteamentos</div>
+          <div style="font-size: 24px; line-height: 1.55; color: #475569;">Infraestrutura, terraplenagem e custo por lote comercializável.</div>
+        </div>
+    </div>
+  </section>
+
+  <section data-label="Como trabalhamos" data-screen-label="08" data-speaker-notes="Da contratação à decisão do comitê. Ajustar prazos conforme o porte do empreendimento." style="background: #0A111E; color: #E7ECF3; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; justify-content: center; gap: 56px; padding: 110px 120px;">
+    <div style="display: flex; align-items: baseline; gap: 26px;">
+      <span style="font-family: 'Roboto Mono', monospace; font-size: 24px; color: #0D9488;">08</span>
+      <h2 style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 52px; letter-spacing: 0.1em; text-transform: uppercase; margin: 0;">Como trabalhamos</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;">
+      <div style="border-left: 1px solid rgba(71,85,105,0.5); padding: 0 40px; display: flex; flex-direction: column; gap: 20px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #0D9488;">Semana 01</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 34px; letter-spacing: 0.06em; text-transform: uppercase;">Imersão</div>
+          <div style="font-size: 24px; line-height: 1.55; color: #94A3B8;">Escopo, premissas, projetos disponíveis e restrições do terreno.</div>
+        </div>
+      
+        <div style="border-left: 1px solid rgba(71,85,105,0.5); padding: 0 40px; display: flex; flex-direction: column; gap: 20px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #0D9488;">Semanas 02-03</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 34px; letter-spacing: 0.06em; text-transform: uppercase;">Quantificação</div>
+          <div style="font-size: 24px; line-height: 1.55; color: #94A3B8;">Levantamento e composição de custos com banco próprio.</div>
+        </div>
+      
+        <div style="border-left: 1px solid rgba(71,85,105,0.5); padding: 0 40px; display: flex; flex-direction: column; gap: 20px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #0D9488;">Semana 04</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 34px; letter-spacing: 0.06em; text-transform: uppercase;">Cenários</div>
+          <div style="font-size: 24px; line-height: 1.55; color: #94A3B8;">Alternativas construtivas e comparação de custo e prazo.</div>
+        </div>
+      
+        <div style="border-left: 1px solid rgba(71,85,105,0.5); padding: 0 40px; display: flex; flex-direction: column; gap: 20px;">
+          <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #0D9488;">Semana 05</div>
+          <div style="font-family: 'Urbanist', sans-serif; font-weight: 500; font-size: 34px; letter-spacing: 0.06em; text-transform: uppercase;">Decisão</div>
+          <div style="font-size: 24px; line-height: 1.55; color: #94A3B8;">Relatório técnico e apresentação ao comitê de investimento.</div>
+        </div>
+    </div>
+    <div style="border: 1px solid rgba(71,85,105,0.5); padding: 40px; display: flex; gap: 60px; flex-wrap: wrap; align-items: baseline;">
+      <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.12em; text-transform: uppercase; color: #94A3B8;">Entregáveis</div>
+      <div style="font-size: 26px; color: #E7ECF3; flex: 1; line-height: 1.5;">Relatório técnico de diagnóstico · Planilha de cenários · Orçamento analítico · Painel de forecast e variações</div>
+    </div>
+  </section>
+
+  <section data-label="Encerramento" data-screen-label="09" data-speaker-notes="Fechar com a frase-manifesto e o convite para a próxima reunião." style="background-color: #0A111E; background-image: linear-gradient(rgba(71,85,105,0.14) 1px, transparent 1px), linear-gradient(90deg, rgba(71,85,105,0.14) 1px, transparent 1px); background-size: 80px 80px; color: #E7ECF3; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; justify-content: space-between; padding: 110px 120px;">
+    <div style="display: flex; flex-direction: column; gap: 44px; margin-top: 80px;">
+      <svg viewBox="0 0 64 64" width="96" height="96">
+        <polygon points="31.6,6 37.7,16.7 16.6,58 4,58" fill="#FFFFFF" />
+        <polygon points="39.5,19.04 60,58 47.4,58 33.2,31.36" fill="#0D9488" />
+      </svg>
+      <div style="font-family: 'Urbanist', sans-serif; font-weight: 300; font-size: 96px; line-height: 1.15; max-width: 26ch; text-wrap: pretty;">Decisões imobiliárias começam pelo <span style="color: #0D9488;">custo certo</span></div>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: flex-end; gap: 60px; border-top: 1px solid rgba(71,85,105,0.5); padding-top: 34px;">
+      <div style="display: flex; align-items: baseline; gap: 14px; font-family: 'Urbanist', sans-serif; font-weight: 400; font-size: 34px; letter-spacing: 0.2em;">
+        <span style="color: #FFFFFF;">ACURIA</span><span style="color: #475569;">|</span><span style="color: #94A3B8; font-size: 24px; letter-spacing: 0.24em; text-transform: uppercase;">Inteligência de custos</span>
+      </div>
+      <div style="font-family: 'Roboto Mono', monospace; font-size: 24px; letter-spacing: 0.1em; color: #94A3B8; text-align: right;">[inserir e-mail de contato]<br />São Paulo · SP</div>
+    </div>
+  </section>
+
+</x-import>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      method: [
+        { n: '01', title: 'Projeto', desc: 'Leitura técnica do escopo e das premissas.' },
+        { n: '02', title: 'Quantitativo', desc: 'Quantidades por sistema e frente de serviço.' },
+        { n: '03', title: 'Banco de custos', desc: 'Composições próprias e índices de referência.' },
+        { n: '04', title: 'Mercado', desc: 'Cotações e preços praticados na praça.' },
+        { n: '05', title: 'Benchmarking', desc: 'Comparação com empreendimentos equivalentes.' },
+        { n: '06', title: 'Cenários', desc: 'Alternativas e impacto em custo e prazo.' },
+        { n: '07', title: 'Decisão', desc: 'Recomendação com risco mapeado.' }
+      ],
+      products: [
+        { name: 'ESTIMA', desc: 'Estimativas de custo, estudos paramétricos, análise de terrenos e viabilidade para concepção de novos negócios.', tag: 'Concepção' },
+        { name: 'ORÇA', desc: 'Orçamento analítico e executivo com diagnóstico técnico e levantamento quantitativo.', tag: 'Orçamentação' },
+        { name: 'DECIDE', desc: 'Engenharia de valor, benchmarking, cenários de custo e análise comparativa de sistemas construtivos.', tag: 'Carro-chefe' },
+        { name: 'CONTROL', desc: 'Gestão de variações de custo, forecast e controle durante o desenvolvimento.', tag: 'Execução' },
+        { name: 'DATA', desc: 'Inteligência de dados e benchmarking histórico de indicadores.', tag: 'Visão de futuro' }
+      ],
+      scenarios: [
+        { label: 'BASE', value: 'R$ 4.187', h: '82%', color: '#475569' },
+        { label: 'C-01', value: 'R$ 4.052', h: '74%', color: '#475569' },
+        { label: 'C-02', value: 'R$ 3.877', h: '62%', color: '#0D9488' },
+        { label: 'C-03', value: 'R$ 4.240', h: '90%', color: '#475569' }
+      ],
+      lines: [
+        { n: '01', title: 'Residencial', desc: 'Viabilidade e custo-alvo por tipologia e padrão de acabamento.' },
+        { n: '02', title: 'HIS / HMP', desc: 'Custo compatível com o enquadramento e a margem do programa.' },
+        { n: '03', title: 'Médio e alto padrão', desc: 'Engenharia de valor sem perda de percepção de produto.' },
+        { n: '04', title: 'Loteamentos', desc: 'Infraestrutura, terraplenagem e custo por lote comercializável.' }
+      ],
+      phases: [
+        { when: 'Semana 01', title: 'Imersão', desc: 'Escopo, premissas, projetos disponíveis e restrições do terreno.' },
+        { when: 'Semanas 02-03', title: 'Quantificação', desc: 'Levantamento e composição de custos com banco próprio.' },
+        { when: 'Semana 04', title: 'Cenários', desc: 'Alternativas construtivas e comparação de custo e prazo.' },
+        { when: 'Semana 05', title: 'Decisão', desc: 'Relatório técnico e apresentação ao comitê de investimento.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
