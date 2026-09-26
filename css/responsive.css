@@ -94,6 +94,36 @@
   }
 }
 
+/* Ajuste horizontal de esteira contínua para Método 360° em telas compactas */
+@media (max-width: 1180px) {
+  .method-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 14px;
+    padding-bottom: 14px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .method-step-card {
+    flex: 0 0 210px;
+    scroll-snap-align: start;
+  }
+
+  .method-grid::-webkit-scrollbar {
+    height: 4px;
+  }
+
+  .method-grid::-webkit-scrollbar-track {
+    background: rgba(14, 22, 38, 0.5);
+  }
+
+  .method-grid::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 2px;
+  }
+}
+
 /* Tablets Compactos e Smartphones Grandes (até 768px) */
 @media (max-width: 768px) {
   :root {
@@ -117,10 +147,6 @@
   .hero-metrics-strip {
     grid-template-columns: 1fr;
     gap: 16px;
-  }
-
-  .method-grid {
-    grid-template-columns: 1fr;
   }
 
   .scenario-buttons-group {
