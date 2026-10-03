@@ -810,6 +810,8 @@
           </div>
 
           <form id="contact-form" autocomplete="off" novalidate>
+            <!-- Campo Honeypot Oculto (Anti-Spam) -->
+            <input type="text" name="website_hp" style="display:none !important; position:absolute; left:-9999px;" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="form-group">
               <label for="lead-name" class="form-label">
                 <span>Nome Completo</span>

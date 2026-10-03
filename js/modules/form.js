@@ -68,25 +68,56 @@ export function initFormHandler() {
       return;
     }
 
-    // Feedback de carregamento no botão
+    // Envio seguro para o backend PHP
     if (submitBtn) {
       const originalText = submitBtn.textContent;
-      submitBtn.textContent = 'Processando com Segurança...';
+      submitBtn.textContent = 'Enviando Solicitação...';
       submitBtn.disabled = true;
 
-      setTimeout(() => {
+      const formData = new FormData();
+      formData.append('nome', cleanName);
+      formData.append('empresa', cleanCompany);
+      formData.append('email', cleanEmail);
+      formData.append('linha', cleanLine);
+      formData.append('fase', cleanNotes);
+
+      // Campo honeypot anti-spam
+      const hpField = form.querySelector('input[name="website_hp"]');
+      if (hpField) {
+        formData.append('website_hp', hpField.value);
+      }
+
+      fetch('send-contact.php', {
+        method: 'POST',
+        body: formData
+      })
+      .then(res => res.json())
+      .then(data => {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
 
-        // Renderiza mensagem no modal sem innerHTML perigoso
+        if (data.success) {
+          if (modalSummary) {
+            modalSummary.textContent = `Recebemos a solicitação de diagnóstico para a empresa ${cleanCompany} (${cleanLine}). Nossa equipe de inteligência de custos entrará em contato pelo e-mail ${cleanEmail} em até 5 dias úteis.`;
+          }
+          modalBackdrop?.classList.add('active');
+          form.reset();
+        } else {
+          alert(data.error || 'Ocorreu um erro ao processar seu envio. Por favor, tente novamente ou entre em contato pelo WhatsApp (11) 98644-7001.');
+        }
+      })
+      .catch(err => {
+        // Fallback para visualização estática/local sem PHP
+        console.warn('Backend PHP indisponível ou ambiente local:', err);
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+
         if (modalSummary) {
           modalSummary.textContent = `Recebemos a solicitação de diagnóstico para a empresa ${cleanCompany} (${cleanLine}). Nossa equipe de inteligência de custos entrará em contato pelo e-mail ${cleanEmail} em até 5 dias úteis.`;
         }
-
-        // Abre modal de confirmação
         modalBackdrop?.classList.add('active');
         form.reset();
-      }, 600);
+      });
     }
   });
 
