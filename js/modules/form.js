@@ -80,7 +80,7 @@ export function initFormHandler() {
 
         // Renderiza mensagem no modal sem innerHTML perigoso
         if (modalSummary) {
-          modalSummary.textContent = `Recebemos a solicitação de diagnóstico para a empresa ${cleanCompany} (${cleanLine}). Nossa equipe de inteligência de custos em São Paulo entrará em contato pelo e-mail ${cleanEmail} em até 5 dias úteis.`;
+          modalSummary.textContent = `Recebemos a solicitação de diagnóstico para a empresa ${cleanCompany} (${cleanLine}). Nossa equipe de inteligência de custos entrará em contato pelo e-mail ${cleanEmail} em até 5 dias úteis.`;
         }
 
         // Abre modal de confirmação

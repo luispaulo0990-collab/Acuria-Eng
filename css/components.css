@@ -133,12 +133,14 @@
   border-top: 1px solid var(--color-slate-border);
   margin-top: 12px;
   max-width: 680px;
+  align-items: stretch;
 }
 
 .metric-item {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  justify-content: center;
 }
 
 .metric-val {
@@ -155,6 +157,99 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--color-text-dim);
+}
+
+/* Box Clicável de Acesso Rápido às Soluções */
+.metric-action-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  text-decoration: none;
+  background: rgba(13, 148, 136, 0.08);
+  border: 1px solid rgba(45, 212, 191, 0.32);
+  border-radius: 8px;
+  padding: 10px 14px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  cursor: pointer;
+}
+
+.metric-action-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(45, 212, 191, 0.2), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.28s ease;
+  pointer-events: none;
+}
+
+.metric-action-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.metric-action-title {
+  font-family: var(--font-brand);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  transition: color 0.25s ease;
+}
+
+.metric-action-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(45, 212, 191, 0.15);
+  color: var(--color-accent-light);
+  flex-shrink: 0;
+  transition: transform 0.28s ease, background 0.28s ease, color 0.28s ease, box-shadow 0.28s ease;
+}
+
+.metric-action-label {
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-light);
+  opacity: 0.9;
+}
+
+.metric-action-card:hover {
+  background: rgba(13, 148, 136, 0.18);
+  border-color: rgba(45, 212, 191, 0.75);
+  box-shadow: 0 6px 22px rgba(13, 148, 136, 0.3), 0 0 12px rgba(45, 212, 191, 0.2);
+  transform: translateY(-2px);
+}
+
+.metric-action-card:hover::before {
+  opacity: 1;
+}
+
+.metric-action-card:hover .metric-action-title {
+  color: #FFFFFF;
+}
+
+.metric-action-card:hover .metric-action-arrow {
+  background: var(--color-accent-light);
+  color: var(--color-bg-primary);
+  transform: translateX(3px);
+  box-shadow: 0 0 10px rgba(45, 212, 191, 0.5);
+}
+
+.metric-action-card:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 2px;
 }
 
 /* Background com Efeito de Profundidade para o Logo ACURIA */
@@ -524,6 +619,55 @@
   border: 1px solid var(--color-accent);
   background: linear-gradient(180deg, rgba(13, 148, 136, 0.12) 0%, rgba(14, 22, 38, 0.95) 100%);
   padding: clamp(32px, 4vw, 44px);
+}
+
+/* Estado 'Em Breve' com Conteúdo Borrado */
+.product-card.card-coming-soon {
+  position: relative;
+  overflow: hidden;
+  border-color: rgba(71, 85, 105, 0.4);
+  background: rgba(14, 22, 38, 0.6);
+}
+
+.product-card.card-coming-soon:hover {
+  border-color: rgba(45, 212, 191, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.product-card.card-featured.card-coming-soon {
+  border: 1px solid rgba(13, 148, 136, 0.35);
+  background: linear-gradient(180deg, rgba(13, 148, 136, 0.06) 0%, rgba(14, 22, 38, 0.8) 100%);
+}
+
+.product-card.card-coming-soon .product-badge-row {
+  position: relative;
+  z-index: 2;
+}
+
+.card-blurred-content {
+  filter: blur(5.5px);
+  -webkit-filter: blur(5.5px);
+  opacity: 0.32;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin-top: 14px;
+}
+
+.mono-tag.mono-tag-soon {
+  border-color: rgba(45, 212, 191, 0.35);
+  color: var(--color-accent-light);
+  background: rgba(13, 148, 136, 0.12);
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .product-badge-row {

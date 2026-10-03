@@ -1,6 +1,6 @@
 # ACURIA | Inteligência de Custos para Decisões Imobiliárias
 
-Plataforma institucional e boutique de inteligência de custos, engenharia de valor e planejamento estratégico para incorporadoras, desenvolvedores e investidores imobiliários na praça de São Paulo.
+Plataforma institucional e boutique de inteligência de custos, engenharia de valor e planejamento estratégico para incorporadoras, desenvolvedores e investidores imobiliários.
 
 ---
 

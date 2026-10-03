@@ -41,7 +41,8 @@ export function initNavigation() {
   }
 
   // 3. Smooth Scroll com offset de compensação do header
-  navLinks.forEach(link => {
+  const internalLinks = document.querySelectorAll('.nav-link, .mobile-nav-link, .metric-action-card, .hero-cta-group a');
+  internalLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const targetId = link.getAttribute('href');
       if (targetId && targetId.startsWith('#')) {
